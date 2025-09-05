@@ -17,6 +17,8 @@ The "Custom Quick Links" component does support configuring links to all of the 
 <li>Single Related Lists</li>
 </ul>
 
+<img width="1075" height="858" alt="1-CQL Types" src="https://github.com/user-attachments/assets/1b1241ea-40ee-4279-9f43-714b10816f0f" />
+
 # Basic Setup
 
 For every appearance of the "Custom Quick Links" component on a flexipage, a "Custom Quick Link Group (CQLG)" record must be created that lists the object the component will reference, the flexipage it was placed on, and the record types assigned to that flexipage that should display the component on them. Under this record, "Custom Quick Link (CQL)" records will be created for each link that should show for an object/flexipage/record type combo. The CQL records will hold configuration details specific to the link type selected to be displayed.
@@ -25,9 +27,9 @@ Note, when creating a CQLG record, in particular, the flexipage needs to be prov
 
 There should only ever be one CQLG record per object/flexipage/record type instance. That said, there is no mechanism to be able to enforce this on custom metadata type records via apex error or validation rules at this time.
 
-1. Create an "Custom Quick Link Group (CQLG)" custom metadata type record that lists the object the component will reference, the flexipage it was placed on, and the record types assigned to that flexipage that should display the component on them. Examples for two separate Account flexipage configurations are provided below.
+1. Create an "Custom Quick Link Group (CQLG)" custom metadata type record that lists the object the component will reference, the flexipage it was placed on, and the record types assigned to that flexipage that should display the component on them.
 
-[ADD TWO CQLG EXAMPLES HERE]
+<img width="1275" height="394" alt="1-AccountCQLG1" src="https://github.com/user-attachments/assets/8e0f4371-00e0-4022-8247-6b9e11981705" />
  
 2. For each desired appearance of a link in the "Custom Quick Component", create a "Custom Quick Link (CQL)" custom metadata type record that captures the required information to correctly configure the link. Required information varies by the link "Type" selected. For all CQL configuration records, regardless of "Type", provide the following:
 <ul>
@@ -42,13 +44,13 @@ Depending on which link "Type" you are configuring, provide additional informati
 <ul>
 <li>Custom Tab (Page) "Link Type" Configuration
 <ul>
-<li>If the link "Type" is "Custom Tab (Page)", provide the URL beginning after the Salesforce base URL and include merge fields in the proper syntax (i.e. /lightning/n/Relationships?c__recordId=[RECORD_ID]&c__objectType=[OBJECT_API_NAME]).
-NOTE: Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].</li>
+<li>If the link "Type" is "Custom Tab (Page)", provide the URL beginning after the Salesforce base URL and include merge fields in the proper syntax (i.e. /lightning/n/Relationships?c__recordId=[RECORD_ID]&c__objectType=[OBJECT_API_NAME]).</li>
+<li>NOTE: Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].</li>
 </ul>
 </li>
 </ul>
 
-[ADD CUSTOM PAGE CQL EXAMPLE HERE]
+<img width="1288" height="413" alt="1-CQL Custom" src="https://github.com/user-attachments/assets/2b6693b7-66de-44fd-8ffb-e8c5fea7ce85" />
 
 <ul>
 <li>Dynamic Single Related List Link Type Configuration
@@ -59,7 +61,9 @@ NOTE: Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].
 </li>
 </ul>
 
- [ADD DYNAMIC CQL EXAMPLE HERE]
+<img width="1288" height="423" alt="1-CQL Dynamic 1" src="https://github.com/user-attachments/assets/ea906dd7-e365-416a-9cae-99c4429fc9cb" />
+
+<img width="1286" height="422" alt="1-CQL Dynamic 2" src="https://github.com/user-attachments/assets/7a80e8ef-bb9e-4652-b770-19850f581105" />
 
 <ul>
 <li>External URL Link Type Configuration
@@ -70,7 +74,7 @@ Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].</li>
 </li>
 </ul>
 
- [ADD EXTERNAL CQL EXAMPLE HERE]
+<img width="1291" height="427" alt="1-CQL External" src="https://github.com/user-attachments/assets/d5e71277-e2ce-4d38-a272-e9d050154ec1" />
 
 <ul>
 <li>Single Related List Link Type Configuration
@@ -81,12 +85,11 @@ If a record count (0-10+) needs to be displayed alongside the link title, check 
 </li>
 </ul>
 
- [ADD SINGLE CQL EXAMPLE HERE]
-
+<img width="1289" height="424" alt="1-CQL Single" src="https://github.com/user-attachments/assets/7229affb-b0e9-44bb-907a-35446d804845" />
 
 3. Add the "Custom Quick Links" component to the record lightning page (flexipage) that the quick links should be displayed on and set the "Flexipage API Name" property on the component to the API name of the flexipage the component is placed on.
 
- [ADD FLEXIPAGE EXAMPLE HERE]
+<img width="1228" height="754" alt="Flexipage Cmp Configuration" src="https://github.com/user-attachments/assets/c5c0872e-3bc0-459a-925d-776bde327075" />
 
 # Limitations
 <ol>
