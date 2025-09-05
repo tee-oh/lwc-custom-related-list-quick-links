@@ -1,0 +1,19 @@
+<template>
+	<template lwc:if={showQuickLinks}>
+		<div class="slds-box quickLinksBox">
+			<div class="slds-page-header__name-title">
+				<h1>
+					<span class="slds-text-heading_small slds-truncate" title="Supplemental Quick Links"><b>Supplemental Quick Links</b></span>
+				</h1>
+			</div>
+			<div class="slds-grid slds-wrap">
+				<template lwc:if={quickLinks} for:each={quickLinks} for:item="link">
+					<div key={link} class="slds-col slds-p-top_x-small slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-6">
+						<lightning-icon icon-name={link.Icon__c} class="slds-m-right_x-small" name='linkIcon' size="xx-small"></lightning-icon>
+						<a class="linkStyle" data-id={link.Id} data-url={link.formattedUrl} data-type={link.Type__c} title={link.Title__c} onclick={navigateToLink}>{link.formattedTitle}</a>
+					</div>
+				</template>
+			</div>
+		</div>
+	</template>
+</template>

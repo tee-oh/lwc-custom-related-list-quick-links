@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>URL__c</fullName>
+    <description>If &quot;Type&quot; is &quot;Custom Tab (Page)&quot;, provide the URL beginning after the Salesforce base URL and include merge fields in the proper syntax (i.e. /lightning/n/Relationships?c__recordId=[RECORD_ID]&amp;c__objectType=[OBJECT_API_NAME]).
+
+If &quot;Type&quot; is &quot;External&quot;, provide the full URL of the external site (i.e. https://www.utah.edu).
+
+Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If &quot;Type&quot; is &quot;Custom Tab (Page)&quot;, provide the URL beginning after the Salesforce base URL and include merge fields in the proper syntax (i.e. /lightning/n/Relationships?c__recordId=[RECORD_ID]&amp;c__objectType=[OBJECT_API_NAME]).
+
+If &quot;Type&quot; is &quot;External&quot;, provide the full URL of the external site (i.e. https://www.utah.edu).
+
+Supported merge fields are: [RECORD_ID], [RECORD_NAME], [OBJECT_API_NAME].</inlineHelpText>
+    <label>URL</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

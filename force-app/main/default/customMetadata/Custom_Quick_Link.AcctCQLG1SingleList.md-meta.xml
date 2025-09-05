@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>AcctCQLG1SingleList</label>
+    <protected>false</protected>
+    <values>
+        <field>Appearance_Order__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+    <values>
+        <field>Custom_Quick_Link_Group__c</field>
+        <value xsi:type="xsd:string">AccountCQLG1</value>
+    </values>
+    <values>
+        <field>Display_Record_Count__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Icon__c</field>
+        <value xsi:type="xsd:string">custom:custom11</value>
+    </values>
+    <values>
+        <field>List_Name__c</field>
+        <value xsi:type="xsd:string">Opportunities</value>
+    </values>
+    <values>
+        <field>Record_Count_SOQL__c</field>
+        <value xsi:type="xsd:string">SELECT Id FROM Opportunity WHERE AccountId = &apos;[RECORD_ID]&apos;</value>
+    </values>
+    <values>
+        <field>Title__c</field>
+        <value xsi:type="xsd:string">Opportunities (Single)</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Single Related List</value>
+    </values>
+    <values>
+        <field>URL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

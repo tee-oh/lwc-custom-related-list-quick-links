@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Custom_Quick_Links</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Custom_Quick_Link_Group__c</columns>
+    <columns>Type__c</columns>
+    <columns>Title__c</columns>
+    <columns>Icon__c</columns>
+    <columns>Appearance_Order__c</columns>
+    <columns>List_Name__c</columns>
+    <columns>URL__c</columns>
+    <columns>Display_Record_Count__c</columns>
+    <columns>Record_Count_SOQL__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Custom Quick Links</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_Record_Count__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked if &quot;Type&quot; is &quot;Dynamic Single Related List&quot; or &quot;Single Related List&quot; and a record count (0-10+) needs to be displayed alongside the link title. The &quot;Record Count SOQL&quot; field should also be completed to provide a SOQL query that matches the related list parameters.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Checked if &quot;Type&quot; is &quot;Dynamic Single Related List&quot; or &quot;Single Related List&quot; and a record count (0-10+) needs to be displayed alongside the link title. The &quot;Record Count SOQL&quot; field should also be completed to provide a SOQL query that matches the related list parameters.</inlineHelpText>
+    <label>Display Record Count</label>
+    <type>Checkbox</type>
+</CustomField>

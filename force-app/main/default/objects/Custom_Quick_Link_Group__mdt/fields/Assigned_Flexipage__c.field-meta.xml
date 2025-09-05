@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Flexipage__c</fullName>
+    <description>Flexipage API name that aligns with all the record types listed under &quot;Display Record Types&quot;.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Flexipage API name that aligns with all the record types listed under &quot;Display Record Types&quot;.</inlineHelpText>
+    <label>Assigned Flexipage</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Count_SOQL__c</fullName>
+    <description>If &quot;Type&quot; is &quot;Dynamic Single Related List&quot; or &quot;Single Related List&quot; and &quot;Display Record Count&quot; is checked, provide a SOQL query that matches the related list configuration, returns the same number of records as the related list, and includes merge fields in the proper syntax (i.e. SELECT Id FROM Case WHERE AccountId = &apos;[RECORD_ID]&apos;).
+
+Supported merge fields are: [RECORD_ID].</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If &quot;Type&quot; is &quot;Dynamic Single Related List&quot; or &quot;Single Related List&quot; and &quot;Display Record Count&quot; is checked, provide a SOQL query that matches the related list configuration, returns the same number of records as the related list, and includes merge fields in the proper syntax (i.e. SELECT Id FROM Case WHERE AccountId = &apos;[RECORD_ID]&apos;).
+
+Supported merge fields are: [RECORD_ID].</inlineHelpText>
+    <label>Record Count SOQL</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>
